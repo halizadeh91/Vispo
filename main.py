@@ -24,3 +24,7 @@ async def analyze_poem(poem: Poem):
         "word_count": word_count,
         "mood": mood
     }
+
+@app.get("/")
+def read_root():
+    return {"message": "Poetry Analyzer API is running"}
